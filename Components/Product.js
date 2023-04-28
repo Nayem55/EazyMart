@@ -1,4 +1,8 @@
-const Product = ({product}) => {
+import useCart from "@/Hooks/useCart";
+
+const Product = ({product,loadCart}) => {
+  const [cart,setCart]= useCart()
+
   const addToCart =(product)=>{
     fetch('http://localhost:3000/api/cart',{
       method: "POST",
@@ -7,6 +11,7 @@ const Product = ({product}) => {
         "content-type": "application/json"
       }
     })
+    // loadCart();
   }
   return (
    <div>

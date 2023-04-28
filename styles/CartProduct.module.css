@@ -1,0 +1,8 @@
+.cartProduct {
+  background: white;
+  margin: 30px;
+  padding: 10px;
+}
+.cartProduct img {
+  width: 150px;
+}

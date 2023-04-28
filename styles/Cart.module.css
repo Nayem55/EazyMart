@@ -1,0 +1,18 @@
+.cart {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.subtotal {
+  position: fixed;
+  top: 200px;
+  right: 60px;
+  margin: 30px;
+  padding: 20px;
+  width: 30%;
+  height: 60%;
+  background: white;
+}

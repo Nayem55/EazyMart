@@ -4,8 +4,10 @@ import profile from "../../public/Images/profile .png";
 import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import useCart from "@/Hooks/useCart";
 const Navbar = () => {
   const [searchText,setSearchText] = useState()
+  const [cart] = useCart()
   const router = useRouter()
   return (
     <div className="lg:sticky top-0 w-full z-10">
@@ -85,7 +87,7 @@ const Navbar = () => {
                   />
                 </svg>
                 <span className="badge bg-accent text-primary font-bold border-none badge-md text-lg indicator-item">
-                  8
+                  {cart.length}
                 </span>
               </div>
             </label>
@@ -94,12 +96,12 @@ const Navbar = () => {
               className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow"
             >
               <div className="card-body border border-accent rounded-box">
-                <span className="font-bold text-lg text-black">8 Items</span>
+                <span className="font-bold text-lg text-black">{cart.length} Items</span>
                 <span className="text-accent font-bold">
                   Subtotal: $999
                 </span>
                 <div className="card-actions">
-                  <button className="btn btn-primary btn-block text-white">
+                  <button onClick={()=>router.push("/cart")} className="btn btn-primary btn-block text-white">
                     <Link href="/cart">View cart</Link>
                   </button>
                 </div>
