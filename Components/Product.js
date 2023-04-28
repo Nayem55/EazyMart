@@ -1,17 +1,18 @@
 import useCart from "@/Hooks/useCart";
+import { toast } from "react-hot-toast";
 
-const Product = ({product,loadCart}) => {
-  const [cart,setCart]= useCart()
-
+const Product = ({product}) => {
+  const [cart] = useCart()
   const addToCart =(product)=>{
-    fetch('http://localhost:3000/api/cart',{
-      method: "POST",
-      body: JSON.stringify({product}),
-      headers:{
-        "content-type": "application/json"
-      }
-    })
-    // loadCart();
+      fetch('http://localhost:3000/api/cart',{
+        method: "POST",
+        body: JSON.stringify({product}),
+        headers:{
+          "content-type": "application/json"
+        }
+      })
+      toast.success("Product added to the cart")
+      window.location.reload();
   }
   return (
    <div>

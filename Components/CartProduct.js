@@ -8,6 +8,7 @@ const CartProduct = ({item , loadCart}) => {
       method: "DELETE"
     });
     loadCart();
+    window.location.reload();
   }
     return (
         <div className={`${style.cartProduct} flex`}>
@@ -31,7 +32,7 @@ const CartProduct = ({item , loadCart}) => {
             </div>
             Quantity : {item?.quantity}
           </div>
-          <button onClick={()=>handleDelete(item.id)} className='btn bg-white border-none hover:bg-white text-xl text-error hover:text-black ml-auto  cursor-pointer'>
+          <button onClick={()=>handleDelete(item.id)} className='btn bg-white border-none hover:bg-white text-xl text-primary hover:text-accent ml-auto  cursor-pointer'>
           <FontAwesomeIcon className="" icon={faTrash}></FontAwesomeIcon>
           </button>
         </div>

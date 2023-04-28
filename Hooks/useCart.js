@@ -12,6 +12,6 @@ const useCart=()=>{
         .then((res) => res.json())
         .then((data) => setCart(data));
     }
-    return [cart ,loadCart]
+    return [cart , loadCart]
 }
 export default useCart;

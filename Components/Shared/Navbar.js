@@ -8,6 +8,15 @@ import useCart from "@/Hooks/useCart";
 const Navbar = () => {
   const [searchText,setSearchText] = useState()
   const [cart] = useCart()
+  let price = 0;
+  let shipping = 0;
+  let quantity = 0;
+
+  cart.forEach((product) => {
+    quantity = quantity + product.quantity;
+    price = price + product.price * product.quantity;
+    shipping = shipping + product.shipping * product.quantity;
+  });
   const router = useRouter()
   return (
     <div className="lg:sticky top-0 w-full z-10">
@@ -25,28 +34,28 @@ const Navbar = () => {
             <select onChange={(e)=>setSearchText(e.target.value)} className="select border border-primary w-[600px] bg-white">
               <option selected>Pick category</option>
               <option>
-                <Link href="/BoysFashion">Boys Fashion</Link>
+                Boys Fashion
               </option>
               <option>
-                <Link href="/GirlsFashion">Girls Fashion</Link>
+                Girls Fashion
               </option>
               <option>
-                <Link href="/HouseholdItems">Household Items</Link>
+                Household Items
               </option>
               <option>
-                <Link href="/ComputerAccessories">Computer Accessories</Link>
+                Computer Accessories
               </option>
               <option>
-                <Link href="/Gadgets">Gadgets</Link>
+                Gadgets
               </option>
               <option>
-                <Link href="/Jewellery">Jewellery</Link>
+                Jewellery
               </option>
               <option>
-                <Link href="/HomeDecoration">Home decoration</Link>
+                Home decoration
               </option>
               <option>
-                <Link href="/Cosmetics">Cosmetics</Link>
+                Cosmetics
               </option>
             </select>
             <button onClick={()=>router.push(searchText?.replace(/\s+/g, ""))} className="btn btn-square bg-primary hover:text-black hover:bg-accent border border-primary">
@@ -87,7 +96,7 @@ const Navbar = () => {
                   />
                 </svg>
                 <span className="badge bg-accent text-primary font-bold border-none badge-md text-lg indicator-item">
-                  {cart.length}
+                  {quantity}
                 </span>
               </div>
             </label>
@@ -96,9 +105,9 @@ const Navbar = () => {
               className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow"
             >
               <div className="card-body border border-accent rounded-box">
-                <span className="font-bold text-lg text-black">{cart.length} Items</span>
+                <span className="font-bold text-lg text-black">{quantity} Items</span>
                 <span className="text-accent font-bold">
-                  Subtotal: $999
+                  Subtotal: ${price + shipping}
                 </span>
                 <div className="card-actions">
                   <button onClick={()=>router.push("/cart")} className="btn btn-primary btn-block text-white">
