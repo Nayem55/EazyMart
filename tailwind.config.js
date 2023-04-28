@@ -31,11 +31,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [
-    require("daisyui"),
-    "postcss-import",
-    "tailwindcss",
-    "autoprefixer"
-
-],
+  plugins: [require("daisyui")],
 }
