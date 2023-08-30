@@ -1,0 +1,97 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/szIXiN06LiFxKF76mjTWR/_buildManifest.js",
+    "static/szIXiN06LiFxKF76mjTWR/_ssgManifest.js"
+  ],
+  "rootMainFiles": [],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-17a9a24315ee9390.js",
+      "static/chunks/pages/index-931ad52845d23153.js"
+    ],
+    "/BoysFashion": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-17a9a24315ee9390.js",
+      "static/chunks/pages/BoysFashion-426f2f2b8e26975f.js"
+    ],
+    "/ComputerAccessories": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-17a9a24315ee9390.js",
+      "static/chunks/pages/ComputerAccessories-2b788fc49320cf9d.js"
+    ],
+    "/Cosmetics": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-17a9a24315ee9390.js",
+      "static/chunks/pages/Cosmetics-7ffa1ba6c1ab2663.js"
+    ],
+    "/Gadgets": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-17a9a24315ee9390.js",
+      "static/chunks/pages/Gadgets-1894d8309b6d41a4.js"
+    ],
+    "/GirlsFashion": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-17a9a24315ee9390.js",
+      "static/chunks/pages/GirlsFashion-5cd270195f105bf8.js"
+    ],
+    "/HomeDecoration": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-17a9a24315ee9390.js",
+      "static/chunks/pages/HomeDecoration-853d33e2db801515.js"
+    ],
+    "/HouseholdItems": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-17a9a24315ee9390.js",
+      "static/chunks/pages/HouseholdItems-487c4affb72e8cca.js"
+    ],
+    "/Jewellery": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-17a9a24315ee9390.js",
+      "static/chunks/pages/Jewellery-174b1f65fea6d610.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-17a9a24315ee9390.js",
+      "static/css/7ebe17399ef0de4a.css",
+      "static/chunks/pages/_app-395e96df85a8034f.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-17a9a24315ee9390.js",
+      "static/chunks/pages/_error-54de1933a164a1ff.js"
+    ],
+    "/cart": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-17a9a24315ee9390.js",
+      "static/chunks/c16184b3-b691c69b90b2d6b7.js",
+      "static/chunks/603-8cca4a395c6e7d20.js",
+      "static/css/f8b4b134f60eb426.css",
+      "static/chunks/pages/cart-467e189a8579498c.js"
+    ],
+    "/home": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-17a9a24315ee9390.js",
+      "static/chunks/pages/home-7239846ddd2bfcc4.js"
+    ]
+  },
+  "ampFirstPages": []
+}
