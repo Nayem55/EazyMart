@@ -1,6 +1,6 @@
 import Link from "next/link";
 import logo from "../../public/Images/logo.png";
-import profile from "../../public/Images/profile .png";
+import profile from "../../public/Images/profile.png";
 import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/router";
@@ -121,7 +121,7 @@ const Navbar = () => {
           <div className="dropdown dropdown-end text-black">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <Image src={profile}></Image>
+              <Image src={profile} width="40" height="40" ></Image>
               </div>
             </label>
             <ul
