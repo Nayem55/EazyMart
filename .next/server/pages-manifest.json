@@ -1,0 +1,20 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/BoysFashion": "pages/BoysFashion.html",
+  "/Cosmetics": "pages/Cosmetics.html",
+  "/ComputerAccessories": "pages/ComputerAccessories.html",
+  "/Gadgets": "pages/Gadgets.html",
+  "/GirlsFashion": "pages/GirlsFashion.html",
+  "/HouseholdItems": "pages/HouseholdItems.html",
+  "/HomeDecoration": "pages/HomeDecoration.html",
+  "/Jewellery": "pages/Jewellery.html",
+  "/api/cart/[productId]": "pages/api/cart/[productId].js",
+  "/api/cart": "pages/api/cart.js",
+  "/api/products": "pages/api/products.js",
+  "/cart": "pages/cart.html",
+  "/home": "pages/home.html",
+  "/": "pages/index.html",
+  "/404": "pages/404.html"
+}
